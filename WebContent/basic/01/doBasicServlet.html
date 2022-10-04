@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Servlet 요청 연습</h2><hr>
+	
+	<h3>Get 방식  요청하기 1 ==> 링크 방식</h3>
+	<a href = "http://localhost:80/webTest/servletTest03.do" >Get방식 요청1(링크방식)</a>
+	<hr>
+	
+	<h3>Get 방식 요청하기 2 ==> form태그 이용</h3>
+	<!-- 
+		<form>태그의 method 속성 생략하거나 "GET"으로 설정하면 GET방식의 요청이 된다.
+	 -->
+	
+	<form action ="http://localhost:80/webTest/servletTest03.do" method ="get">
+		<input type ="submit" value = "Get방식 요청2(form태그 이용)"> <!-- form 안의 data를 전송 -->
+	
+	</form>
+	<hr>
+	
+	<h3>Post 방식 요청하기 ==> form태그 이용</h3>
+	
+	<!-- 
+		<form>태그의 method속성값을 "POST"로 설정하면 POST 방식 요청이됨
+	 -->
+	
+	<form action = "http://localhost:80/webTest/servletTest03.do" method ="post">
+		<input type ="submit" value = "Post방식 요청 (form태그 이용)">
+	</form>
+	
+</body>
+</html>
